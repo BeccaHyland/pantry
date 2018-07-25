@@ -16,7 +16,7 @@ class RecipeTest < Minitest::Test
     assert_equal ["Flour", "Cheese"], r.ingredient_types
   end
 
-  def test_it_tracks_amount_of_a_recipe_required
+  def test_it_tracks_amount_of_a_recipe_required #should say, amount_of_ingredient_required
     r = Recipe.new("Cheese Pizza")
     r.add_ingredient("Flour", 500)
     assert_equal 500, r.amount_required("Flour")
