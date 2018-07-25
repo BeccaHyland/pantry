@@ -48,6 +48,17 @@ class Pantry
     cookbook << recipe
   end
 
-  
+  def what_can_i_make
+    #what is in the @stock
+    #compare it to different recipes
+    possible_meals = []
+      do
+
+
+      end
+      possible_meals << recipe
+    end
+    return possible_meals
+  end
 
 end

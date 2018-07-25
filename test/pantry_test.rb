@@ -30,7 +30,7 @@ class PantryTest < Minitest::Test
     assert_equal 30, @pantry.stock_check("Cheese")
   end
 
-  #def test it has a shopping list
+  #def test it starts with an empty shopping list
 
   def test_can_add_to_its_a_shopping_list
     recipe1 = Recipe.new("Cheese Pizza")
@@ -67,6 +67,8 @@ class PantryTest < Minitest::Test
     expected = "* Cheese: 25\n* Flour: 20\n* Spaghetti Noodles: 10\n* Marinara Sauce: 10"
     assert_equal expected, @pantry.print_shopping_list
   end
+
+  # def test_it_starts_with_an_empty_cookbook
 
   def test_it_can_recommend_recipes
     r1 = Recipe.new("Cheese Pizza")
